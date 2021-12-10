@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<!-- The Doctype does two things.
+
+It identifies which dialect of HTML you're using.
+It controls whether the browsers uses "standards" or "quirks" mode to render the document.
+If there is no doctype, or there's an unrecognized one, then it uses "quirks" mode and interprets the document as best
+it can. If there IS a doctype, and it recognizes it, then it follows the standards. The results of the rendering can
+vary depending on how it interprets the document. -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <!-- <script src="/Jquery/jquery-3.6.0.js"></script> -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section class="section1">
+
+        <div class="container-fluid container1 my-5">
+            <!-- Hover over these columns!; you can also click! msg-->
+            <span class="my-5 hovermsg">
+                <small class="my-5 fst-italic fs-4" style="display: block;font-family:'Lucida Sans';letter-spacing: 5;">
+                    <strong>H</strong>over over
+                    the columns below the icons! You can also click ! <br> <br> Click anywhere in the page, and the
+                    "Goodbye" message will disappear
+                </small>
+                <span style="font-family: Roboto;font-size: 30;word-spacing: 20;">And hover over these icons :</span>
+            </span> <br> <br>
+            <span class="ms-5 fw-bold my-5" style="font-family: Poiret One ;font-size: 25;">These are the most used
+                techonolgies in
+                <span class="shake">
+                    <span class="TextShake d-inline-block" style="font-variant: small-caps;font-size: 40px;">Web
+                        Developement
+                    </span>
+                </span> :
+            </span>
+            <!-- tech icons -->
+            <div class="tech-icons text-center mb-5 border border-3 border-dark rounded">
+                <a href="https://angularjs.org/"> <img src="./images/angularjs-icon.png" class="img-icon me-2 my-5 tt"
+                        title="AngularJS" data-bs-placement="bottom" width="100" height="100"></a>
+                <a href="https://babeljs.io/"><img src="./images/babel.png" class="img-icon me-2 tt" width="100"
+                        title="Babel" data-bs-placement="bottom" height="100"></a>
+                <a href="https://getbootstrap.com/"> <img src="./images/Bootstrap.png" class="img-icon me-2 mt-5 tt"
+                        title="Bootstrap" data-bs-placement="bottom" width="100" height="100"> </a>
+                <a href="https://www.w3.org/Style/CSS/"><img src="./images/css3.png" class="img-icon me-2 tt"
+                        title="CSS3" data-bs-placement="bottom" width="100" height="100">
+                </a>
+                <a href="https://flutter.dev/"><img src="./images/flutter.png" class="img-icon me-2 mb-5 tt"
+                        title="Flutter" data-bs-placement="bottom" width="100" height="100">
+                </a>
+                <a href="https://git-scm.com/"><img src="./images/git.png" class="img-icon me-2 tt" title="Git"
+                        data-bs-placement="bottom" width="100" height="100">
+                </a>
+                <a href="https://html.spec.whatwg.org/"> <img src="./images/html5.png" class="img-icon me-2 mt-5 tt"
+                        title="HTML5" data-bs-placement="bottom" width="100" height="100">
+                </a>
+                <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript"> <img src="./images/javascript.png"
+                        class="img-icon me-2 tt" title="JS" data-bs-placement="bottom" width="100" height="100">
+                </a>
+                <a href="https://jquery.com/"> <img src="./images/jquery.png" class="img-icon me-2 mb-5 tt"
+                        title="jQuery" data-bs-placement="bottom" width="100" height="100">
+                </a>
+                <a href="https://nodejs.org/en/"> <img src="./images//nodejs.png" class="img-icon me-2 tt"
+                        title="NodeJS" data-bs-placement="bottom" width="100" height="100">
+                </a>
+                <a href="https://fr.reactjs.org/"> <img src="./images/react.png" class="img-icon me-2 mt-5 tt"
+                        title="ReactJS" data-bs-placement="bottom" width="100" height="100">
+                </a>
+                <img src="./images/redux1.png" class="img-icon me-2 tt" title="Redux" data-bs-placement="bottom"
+                    width="100" height="100">
+                <a href="https://sass-lang.com/"> <img src="./images/sass.png" class="img-icon me-2 mb-5 tt"
+                        title="Sass" data-bs-placement="bottom" width="100" height="100">
+                </a>
+                <a href="https://tailwindcss.com/"> <img src="./images/tailwind.png" class="img-icon me-2 tt"
+                        width="100" height="100" title="tailwind" data-bs-placement="bottom">
+                </a>
+                <a href="https://www.typescriptlang.org/"> <img src="./images/typescript.png"
+                        class="img-icon me-2 mt-5 tt" width="100" height="100" title="typescript"
+                        data-bs-placement="bottom">
+                </a>
+                <a href="https://vuejs.org/"> <img src="./images/vuejs.png" class="img-icon me-2 tt" width="100"
+                        height="100" title="VueJS" data-bs-placement="bottom">
+                </a>
+                <a href="https://webpack.js.org/"> <img src="./images/webpack.png" class="img-icon mb-5 me-2 tt"
+                        width="100" height="100" title="Webpack" data-bs-placement="bottom"> <br>
+                </a>
+            </div>
+            <!-- Showing them when the user hover click on a btn -->
+            <div class="border border-2 border-grey py-5 my-5 mx-5 icons-div-2">
+                <button class="mx-5 mt-3 btn btn-lg btn-primary p-4 rounded btn-icons">Click here ! <small
+                        class="disappear fw-bold" style="font-size: 12;color: black; display: none;">When the icons
+                        disappear, click again</small> </button>
+
+                <div class="mb-5 wrapItems d-inline-block me-5 p-5" style="background-color: #f8f9fa;">
+                    <img src="./images/git.png" class="img-icon" width="64" height="64">
+                    <img src="./images/flutter.png" class="img-icon" width="64" height="64">
+                    <img src="./images/css3.png" class="img-icon" width="64" height="64">
+                    <img src="./images/Bootstrap.png" class="img-icon" width="64" height="64">
+                    <img src="./images/babel.png" class="img-icon" width="64" height="64">
+                    <img src="./images/angularjs-icon.png" class="img-icon" width="64" height="64">
+                    <img src="./images/jquery.png" class="img-icon" width="64" height="64">
+                    <img src="./images/javascript.png" class="img-icon" width="64" height="64">
+                    <img src="./images/webpack.png" class="img-icon" width="64" height="64">
+                    <img src="./images/vuejs.png" class="img-icon" width="64" height="64">
+                    <img src="./images/typescript.png" class="img-icon" width="64" height="64">
+                    <img src="./images/sass.png" class="img-icon" width="64" height="64">
+                    <img src="./images/tailwind.png" class="img-icon" width="64" height="64">
+                    <img src="./images/redux1.png" class="img-icon" width="64" height="64">
+                    <img src="./images/react.png" class="img-icon" width="64" height="64">
+                    <img src="./images//nodejs.png" class="img-icon" width="64" height="64">
+                    <img src="./images/html5.png" class="img-icon me-5" width="64" height="64">
+                </div>
+            </div>
+
+            <!-- <span class="fw-bold mb-5 JS-indeed" style="font-variant: small-caps;font-size: 28;display: none;">"JavaScript" is
+                indeed an awesome and powerful programming language for the web</span> -->
+
+            <div class="row row1 test-row border border-3 border-grey mb-5">
+                <div class="ms-5 col-md-8 col-lg-2 col1-1 test mb-5 me-5 border border-dark tt"
+                    data-bs-placement="bottom" title="'JavaScript' is
+                indeed an awesome and powerful programming language for the web">
+                    <span class="span1 fw-bold fs-4"></span>
+                    <span class="span2 lead" style="display: block;"></span>
+                    <span class="span3 fst-italic fs-5" style="display: inline-block;"></span>
+                </div>
+                <div class="col-md-8 col-lg-2 col1-1 test mb-5 me-5 border border-2 tt" data-bs-placement="bottom"
+                    title="'JavaScript' is
+                indeed an awesome and powerful programming language for the web">
+                    <span class=" span1 fw-bold fs-4"></span>
+                    <span class="span2 lead" style="display: inline-block;"></span>
+                    <span class="span3 fst-italic fs-5"></span>
+                </div>
+                <div class="col-md-8 col-lg-3 col1-1 test mb-5 me-5 border border-2 border-dark tt"
+                    data-bs-placement="bottom" title="'JavaScript' is
+                indeed an awesome and powerful programming language for the web">
+                    <span class=" span1 fw-bold fs-4"></span>
+                    <span class="span2 lead" style="display: inline-block;"></span>
+                    <span class="span3 fst-italic fs-5"></span>
+                </div>
+                <div class="col-md-8 col-lg-2 col1-1 test mb-5 me-5 border border-2 tt" data-bs-placement="bottom"
+                    title="'JavaScript' is
+                indeed an awesome and powerful programming language for the web">
+                    <span class=" span1 fw-bold fs-4"></span>
+                    <span class="span2 lead" style="display: inline-block;"></span>
+                    <span class="span3 fst-italic fs-5"></span>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button class="me-5 mb-5 py-2 w-25 btn btn-sm btn-outline-success fw-bold" style="font-size: 18;"
+                    id="btn1">Click here to see what will happen
+                    to the row above :</button>
+                <button class="py-2 w-25 btn btn-sm btn-outline-primary fw-bold mb-5" style="font-size: 18;"
+                    id="btn2">Click here
+                    to see what will happen to the
+                    row below :</button>
+            </div>
+
+            <!-- End of the first row -->
+            <div class="border border-3 border-secondary row2-wrapper">
+                <div class="row row2 p-5 my-3">
+                    <div class="col-md-8 col-lg-2 ms-1 me-5 mb-5 col2-1 border border-2 border-primary tt"
+                        data-bs-placement="bottom" data-bs-toggle="tooltip" title="Angular is a component-based framework for building scalable web applications · A collection of well-integrated libraries that cover a wide 
+                        variety of ...">
+                        <span class=" span1 fw-bold fs-5"></span>
+                        <span class="span2 lead my-2" style="display: inline-block;"></span>
+                        <span class="span3 fst-italic fs-5 ps-5"></span>
+                    </div>
+
+                    <div class="col-md-8 col-lg-2 me-5 mb-5 col2-2 border border-2 border-secondary tt"
+                        data-bs-placement="left"
+                        title="Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in ...">
+                        <span class=" span1 fw-bold fs-5"></span>
+                        <span class="span2 lead my-2" style="display: inline-block;margin-left:-20px;"></span>
+                        <span class="span3 fst-italic fs-5"></span>
+                    </div>
+                    <div class="col-md-8 col-lg-2 me-5 mb-5 col2-3 border border-2 border-dark tt"
+                        data-bs-placement="bottom"
+                        title="Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites. Bootstrap 5 is the newest version of Bootstrap ...">
+                        <span class=" span1 fw-bold fs-5"></span>
+                        <span class="span2 lead my-2" style="display: inline-block;margin-left:-50px;"></span>
+                        <span class="span3 fst-italic fs-5"></span>
+                    </div>
+                    <div class="col-md-8 col-lg-2 me-5 mb-5 col2-4 border border-2 border-secondary tt"
+                        data-bs-placement="bottom"
+                        title="CSS3 is used with HTML to create and format content structure. It is responsible for colours, font properties, text alignments, background images, graphics, tables...">
+                        <span class=" span1 fw-bold fs-5"></span>
+                        <span class="span2 lead my-2" style="display: inline-block;margin-left:-20px;"></span>
+                        <span class="span3 fst-italic fs-5"></span>
+                    </div>
+                    <div class="col-md-8 col-lg-2 col2-5 mb-5 border border-2 tt" data-bs-placement="bottom"
+                        title="Flutter is a cross-platform UI toolkit that is designed to allow code reuse across operating systems such as iOS and Android, while also allowing applications to interface directly with underlying platform services.">
+                        <span class=" span1 fw-bold fs-5"></span>
+                        <span class="span2 lead my-2" style="display: inline-block;margin-left:-20px;"></span>
+                        <span class="span3 fst-italic fs-5"></span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- End of the 2nd row -->
+
+            <!-- 3rd row -->
+            <div class="row row3 border border-2 mt-5">
+                <div class="col-md-8 col-lg-2 mx-5 col3-1 border border-2 tt" data-bs-placement="bottom" title="Git (/ɡɪt/) is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development.
+                ">
+                    <span class=" span1 fw-bold fs-3"></span>
+                    <span class="span2 lead my-2" style="display: inline-block; margin-left: -20;"></span>
+                    <span class="span3 fst-italic fs-3"></span>
+
+                </div>
+                <div class="col-md-8 col-lg-2 me-5 col3-2 rounded border border-1 border-dark tt"
+                    data-bs-placement="bottom" title="HyperText Markup Language (HTML) is the set of markup symbols or codes inserted into a file intended for display on the Internet. The markup tells web browsers how to display a web page's words and images.
+                    ">
+                    <span class=" span1 fw-bold fs-3"></span>
+                    <span class="span2 lead my-2" style="display: inline-block; margin-left: -20;"></span>
+                    <span class="span3 fst-italic fs-3"></span>
+
+                </div>
+                <div class="col-md-8 col-lg-2 me-5 col3-3 border border-2 border-dark tt" data-bs-placement="bottom"
+                    title="jQuery is a lightweight, write less, do more, JavaScript library. The purpose of jQuery is
+                    to make it much easier to use JavaScript on your website. jQuery takes a lot of common tasks that
+                    require many lines of JavaScript code to accomplish, and wraps them into methods that you can call
+                    with a single line of code. ">
+                    <span class=" span1 fw-bold fs-3"></span>
+                    <span class="span2 lead my-2" style="display: inline-block; margin-left: -20;"></span>
+                    <span class="span3 fst-italic fs-3"></span>
+
+                </div>
+                <div class="col-md-8 col-lg-2 me-5 col3-4 rounded border border-3 border-primary tt"
+                    data-bs-placement="bottom" title="Node. js is a platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications. Node. js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
+                    ">
+                    <span class=" span1 fw-bold fs-3"></span>
+                    <span class="span2 lead my-2" style="display: inline-block;margin-left: -20;"></span>
+                    <span class="span3 fst-italic fs-3"></span>
+                </div>
+                <div class="col-md-8 col-lg-2 me-5 col3-5 border border-1 border-secondary tt"
+                    data-bs-placement="bottom" title="React. js is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications. It's used for handling the view layer for web and mobile apps. React also allows us to create reusable UI components.10 fév. 2021
+                    ">
+                    <span class=" span1 fw-bold fs-3"></span>
+                    <span class="span2 lead my-2" style="display: inline-block;margin-left: -20;"></span>
+                    <span class="span3 fst-italic fs-3"></span>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button class="me-5 my-5 py-4 w-25 btn btn-sm btn-outline-info fw-bold" style="font-size: 18;"
+                    id="btn3">Click here to see what will happen
+                    to the row above :
+                </button>
+
+                <button class="py-3 my-5 w-25 btn btn-sm btn-outline-secondary fw-bold" style="font-size: 18;"
+                    id="btn4">Click here to see what will happen
+                    to the
+                    row below :
+                </button>
+            </div>
+
+            <!-- 4th  row -->
+            <div class="row row4 border">
+                <div class="col-md-8 col-lg-2 mx-5 col4-1 border border-2 tt" data-bs-placement="bottom"
+                    title="Redux is a predictable state container designed to help you write JavaScript apps that behave consistently across client, server, and native environments and are easy to test. While it's mostly used as a state management tool with React, you can use it with any other JavaScript framework or library...">
+                    <span class=" span1 fw-bold fs-3"></span>
+                    <span class="span2 lead my-2" style="display: inline-block; margin-left: -20;"></span>
+                    <span class="span3 fst-italic fs-3"></span>
+
+                </div>
+                <div class="col-md-8 col-lg-2 me-5 col4-2 rounded border border-1 border-success tt"
+                    data-bs-placement="bottom" title="Sass (which stands for 'Syntactically awesome style sheets) is an extension of CSS that enables you to use things like variables, nested rules, inline imports and more.
+                     It also helps to keep things organised and allows you to create style sheets faster...">
+                    <span class=" span1 fw-bold fs-3"></span>
+                    <span class="span2 lead my-2" style="display: inline-block; margin-left: -20;"></span>
+                    <span class="span3 fst-italic fs-3"></span>
+
+                </div>
+                <div class="col-md-8 col-lg-2 me-5 col4-3 border border-2 border-primary tt" data-bs-placement="bottom"
+                    title="Tailwind CSS is basically a utility-first CSS framework for rapidly building custom user interfaces. It is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override...">
+                    <span class=" span1 fw-bold fs-3"></span>
+                    <span class="span2 lead my-2" style="display: inline-block; margin-left: -20;"></span>
+                    <span class="span3 fst-italic fs-3"></span>
+
+                </div>
+                <div class="col-md-8 col-lg-2 me-5 col4-4 rounded border border-3 border-dark tt"
+                    data-bs-placement="bottom"
+                    title="TypeScript is JavaScript with syntax for types. TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale...">
+                    <span class=" span1 fw-bold fs-3"></span>
+                    <span class="span2 lead my-2" style="display: inline-block;margin-left: -20;"></span>
+                    <span class="span3 fst-italic fs-3"></span>
+                </div>
+                <div class="col-md-8 col-lg-2 me-5 col4-5 border border-1 border-grey tt" data-bs-placement="bottom"
+                    title="VueJS is primarily used to build web interfaces and one-page applications. In saying that, it can also be applied to both desktop and mobile app development thanks to the HTML extensions and JS base working in tandem with an Electron framework – making it a heavily favoured frontend tool.
+                    ">
+                    <span class=" span1 fw-bold fs-3"></span>
+                    <span class="span2 lead my-2" style="display: inline-block;margin-left: -20;"></span>
+                    <span class="span3 fst-italic fs-3"></span>
+                </div>
+            </div>
+
+            <br> <br> <br><br><br><br><br> <br> <br> <br><br><br><br><br>
+
+        </div>
+
+
+    </section>
+
+    <script src="./js2.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+            new bootstrap.Tooltip(t)
+        })
+    </script>
+
+</body>
+
+</html>
